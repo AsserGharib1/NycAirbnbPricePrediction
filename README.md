@@ -1,5 +1,9 @@
 # NYC Airbnb Price Prediction — Regression Benchmark
 
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/AsserGharib1/NycAirbnbPricePrediction/blob/main/nyc_airbnb_price_regression.ipynb)
+[![View on nbviewer](https://img.shields.io/badge/view%20full%20notebook-nbviewer-F37626?logo=jupyter&logoColor=white)](https://nbviewer.org/github/AsserGharib1/NycAirbnbPricePrediction/blob/main/nyc_airbnb_price_regression.ipynb)
+
+
 Price modeling for **49,000 NYC Airbnb listings** (AB_NYC_2019), comparing tuned non-linear regressors against a linear baseline.
 
 ## Results
@@ -17,6 +21,18 @@ Model selection used validation-curve sweeps over k and tree depth; learning cur
 - Cleaning + feature preparation: imputation, one-hot encoding, scaling (fit on train only)
 - Hyperparameter sweeps for KNN and Decision Tree
 - Learning-curve analysis and test-set comparison
+
+## Sample outputs
+
+KNN hyperparameter tuning:
+
+![KNN tuning](figures/knn_tuning.png)
+
+Learning curves:
+
+![Learning curve 1](figures/learning_curve_1.png)
+
+![Learning curve 2](figures/learning_curve_2.png)
 
 ## Repository contents
 
